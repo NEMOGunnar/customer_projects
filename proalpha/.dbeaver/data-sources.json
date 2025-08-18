@@ -1,0 +1,43 @@
+{
+	"folders": {},
+	"connections": {
+		"sap_hana-19618d67ca3-5af380724a8f7b0d": {
+			"provider": "hana",
+			"driver": "sap_hana",
+			"name": "10.0.0.214",
+			"save-password": true,
+			"configuration": {
+				"host": "10.0.0.214",
+				"port": "30013",
+				"url": "jdbc:sap://10.0.0.214:30013",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"databaseName": "PAG"
+				},
+				"provider-properties": {
+					"edition": "PLATFORM_TENANT_DB",
+					"instanceNumber": "0"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
